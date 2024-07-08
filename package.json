@@ -1,0 +1,21 @@
+{
+  "name": "olegiscrazy.github.io",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "deploy": "bun run build && npx gh-pages -d dist",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^4.11.5",
+    "@astrojs/check": "^0.8.0",
+    "typescript": "^5.5.3"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
+  }
+}
