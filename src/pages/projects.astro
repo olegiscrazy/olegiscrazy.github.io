@@ -1,0 +1,35 @@
+---
+// src/pages/projects.astro
+import Layout from '../layouts/Layout.astro';
+
+const title = "Projects";
+---
+
+<Layout {title}>
+    <section class="py-8">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl font-bold mb-4">Projects</h1>
+            <p class="mb-4">
+                Here are some of the projects I have worked on over the years. Each project showcases my skills and expertise in software development.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-4 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-2">Project 1</h2>
+                    <p class="mb-2">Description of Project 1. This project involved using React and Node.js to build a web application.</p>
+                    <a href="#" class="text-blue-500 hover:underline">View Project</a>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-2">Project 2</h2>
+                    <p class="mb-2">Description of Project 2. This project involved using Python and Django to build a web application.</p>
+                    <a href="#" class="text-blue-500 hover:underline">View Project</a>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-2">Project 3</h2>
+                    <p class="mb-2">Description of Project 3. This project involved using Java and Spring Boot to build a web application.</p>
+                    <a href="#" class="text-blue-500 hover:underline">View Project</a>
+                </div>
+                <!-- Add more projects as needed -->
+            </div>
+        </div>
+    </section>
+</Layout>

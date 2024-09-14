@@ -1,0 +1,40 @@
+---
+// src/pages/contact.astro
+import Layout from '../layouts/Layout.astro';
+
+const title = "Contact";
+---
+
+<Layout {title}>
+    <section class="py-8">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl font-bold mb-4">Contact</h1>
+            <p class="mb-4">
+                If you would like to get in touch with me, please fill out the form below or reach out to me via email or social media.
+            </p>
+            <form class="bg-white p-4 rounded-lg shadow-md">
+                <div class="mb-4">
+                    <label for="name" class="block text-sm font-bold mb-2">Name</label>
+                    <input type="text" id="name" name="name" class="w-full px-3 py-2 border rounded-lg" required>
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-sm font-bold mb-2">Email</label>
+                    <input type="email" id="email" name="email" class="w-full px-3 py-2 border rounded-lg" required>
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-sm font-bold mb-2">Message</label>
+                    <textarea id="message" name="message" class="w-full px-3 py-2 border rounded-lg" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">Send Message</button>
+            </form>
+            <div class="mt-8">
+                <h2 class="text-3xl font-bold mb-4">Social Media</h2>
+                <div class="flex space-x-4">
+                    <a href="https://www.linkedin.com/in/oleg-semikopenko" target="_blank" rel="noopener" class="text-blue-500 hover:underline">LinkedIn</a>
+                    <a href="https://github.com/olegiscrazy" target="_blank" rel="noopener" class="text-blue-500 hover:underline">GitHub</a>
+                    <a href="mailto:oleg.semikopenko@epitech.eu" class="text-blue-500 hover:underline">Email</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</Layout>

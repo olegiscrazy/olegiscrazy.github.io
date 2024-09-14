@@ -1,10 +1,33 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Badge from '../components/Badge.astro';
 import Card from '../components/Card.astro';
 ---
 
 <Layout title="Oleg Semikopenko">
-	<main>
-		<h1>Portfolio</h1>
-	</main>
+    <main>
+        <section class="w-full mx-auto lg:w-[740px] py-44">
+            <img
+                class="w-12 h-12 rounded-full mb-4"
+                src="https://media.licdn.com/dms/image/D5603AQEHvfG44OTo3g/profile-displayphoto-shrink_800_800/0/1685885039034?e=2147483647&v=beta&t=Zd0kDjauPmalNkJTX01y-KKRli-TOtavkpz4lfFuSe0"
+                alt="oleg photo"
+            />
+            <h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-10">
+                Hey, I'm Oleg. <a
+                    href="https://www.linkedin.com/in/oleg-semikopenko"
+                    target="_blank"
+                    rel="noopener"
+                    class="flex justify-center items-center">
+                    <Badge>Open to work</Badge>
+                </a>
+            </h1>
+            <h2 class="text-2xl opacity-80 text-wrap">
+                A very motivated software engineer and IT expert that has
+                earned a strong passion for technologies. From Ukraine 🇺🇦
+                living in Barcelona 🇪🇸. +1500 hours of work.
+            </h2>
+            <!--  <Card title="Frontend Developer" body="Developing a new platform for the sports industry." href="https://www.bsport.io" /> -->
+            <ul></ul>
+        </section>
+    </main>
 </Layout>
